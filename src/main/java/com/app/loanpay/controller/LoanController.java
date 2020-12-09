@@ -26,7 +26,7 @@ public class LoanController {
 	private static final String FAILURE = "Failure";
 	@Autowired
 	  private LoanService service;
-	  @PostMapping("/addloanprogram")
+	  @PostMapping("/addloanprogram")	
 	  public UserResponse loanProgram(@RequestBody LoanInfo loaninfo)  {
 			UserResponse response = new UserResponse();
              System.out.println(loaninfo);
